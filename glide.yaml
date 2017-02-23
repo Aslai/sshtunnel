@@ -1,10 +1,16 @@
 package: github.com/mgutz/sshtunnel
 import:
-- package: github.com/mgutz/dat
-  version: next
+- package: gopkg.in/mgutz/dat.v2
+  version: mgutz/jsql
+  repo: https://github.com/mgutz/dat
+  vcs: git
   subpackages:
   - dat
+  - kvs
   - sqlx-runner
+- package: github.com/mgutz/sshtunnel
+- package: github.com/mgutz/logxi
+  version: mgutz/v2
 - package: golang.org/x/crypto
   subpackages:
   - ssh

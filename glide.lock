@@ -1,68 +1,70 @@
-hash: a1318584e118141a760a2b9fc61b8105a14492cf91b4ae1b1608cef2486ae827
-updated: 2016-11-03T07:49:30.121519148-07:00
+hash: b019c81099cc4578f0b5d870b0e9b37a1c6b024cbc634e05a815e390a1c5492c
+updated: 2017-02-21T16:33:39.707627225-08:00
 imports:
 - name: github.com/cenkalti/backoff
-  version: 32cd0c5b3aef12c76ed64aaf678f6c79736be7dc
+  version: b02f2bbce11d7ea6b97f282ef1771b0fe2f65ef3
 - name: github.com/garyburd/redigo
-  version: 8873b2f1995f59d4bcdd2b0dc9858e2cb9bf0c13
+  version: 0d253a66e6e1349f4581d6d2b300ee434ee2da9f
   subpackages:
-  - internal
   - redis
+  - internal
 - name: github.com/imdario/mergo
   version: 3e95a51e0639b4cf372f2ccf74c86749d747fbdc
 - name: github.com/jmoiron/sqlx
-  version: 5f97679e23f75f42b265fec8d3bdb1c8de90b79d
+  version: f4076845477b10ac2453a16377a8383467aafe72
   subpackages:
   - reflectx
 - name: github.com/lib/pq
-  version: d8eeeb8bae8896dd8e1b7e514ab0d396c4f12a1b
+  version: ba5d4f7a35561e22fbdf7a39aa0070f4d460cfc0
   subpackages:
   - oid
 - name: github.com/mattn/go-colorable
-  version: 6e26b354bd2b0fc420cb632b0d878abccdc6544c
+  version: ed8eb9e318d7a84ce5915b495b7d35e0cfe7b5a8
 - name: github.com/mattn/go-isatty
-  version: 66b8e73f3f5cda9f96b69efd03dd3d7fc4a5cdb8
+  version: 3a115632dcd687f9c8cd01679c83a06a0e21c1f3
 - name: github.com/mgutz/ansi
-  version: c286dcecd19ff979eeb73ea444e479b903f2cfcb
+  version: 9520e82c474b0a04dd04f8a40959027271bab992
 - name: github.com/mgutz/configpipe
   version: 8d7c8747a17c00e21877036ff4dd980aa289becb
-- name: github.com/mgutz/dat
-  version: 23cf59ea969e2bc0df03d31775f623cf0424e2b1
-  subpackages:
-  - common
-  - dat
-  - kvs
-  - postgres
-  - reflectx
-  - sqlx-runner
 - name: github.com/mgutz/jo
   version: 7609815e16fdb9239a0e1e353e27c78823ce2beb
 - name: github.com/mgutz/logxi
-  version: aebf8a7d67ab4625e0fd4a665766fef9a709161b
-  subpackages:
-  - v1
+  version: 66c6f0d82a52e2d706bc1a8bf73a1abdc40825c9
+- name: github.com/mgutz/sshtunnel
+  version: 4b96cd995d08877df9169bd6dfd48fc47608da78
 - name: github.com/mgutz/str
   version: 968bf66e3da857419e4f6e71b2d5c9ae95682dc4
 - name: github.com/mgutz/to
   version: 00c06406c2dd2e011f153a6502a21473676db33f
 - name: github.com/mgutz/yaml
   version: fa84835a587118b5ebe80c9b66ecd5a4d96e93ea
-- name: github.com/pkg/errors
-  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
 - name: github.com/pmylund/go-cache
-  version: 1881a9bccb818787f68c52bfba648c6cf34c34fa
+  version: e7a9def80f35fe1b170b7b8b68871d59dea117e1
 - name: github.com/satori/go.uuid
-  version: 879c5887cd475cd7864858769793b2ceb0d44feb
+  version: b061729afc07e77a8aa4fad0a2fd840958f1942a
 - name: golang.org/x/crypto
-  version: 9477e0b78b9ac3d0b03822fd95422e2fe07627cd
+  version: 453249f01cfeb54c3d549ddb75ff152ca243f9d8
   subpackages:
+  - ssh
+  - ssh/agent
   - curve25519
   - ed25519
   - ed25519/internal/edwards25519
-  - ssh
-  - ssh/agent
 - name: golang.org/x/sys
-  version: c200b10b5d5e122be351b67af224adc6128af5bf
+  version: 075e574b89e4c2d22f2286a7e2b919519c6f3547
   subpackages:
   - unix
-testImports: []
+- name: gopkg.in/mgutz/dat.v2
+  version: 403ada7b7868f78180b799d2646e65e3f239cbe7
+  repo: https://github.com/mgutz/dat
+  vcs: git
+  subpackages:
+  - dat
+  - kvs
+  - sqlx-runner
+  - postgres
+  - common
+  - reflectx
+devImports: []

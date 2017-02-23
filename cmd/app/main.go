@@ -11,8 +11,8 @@ import (
 	conf "github.com/mgutz/configpipe"
 	"github.com/mgutz/sshtunnel"
 
-	"github.com/mgutz/dat/dat"
-	runner "github.com/mgutz/dat/sqlx-runner"
+	"gopkg.in/mgutz/dat.v2/dat"
+	runner "gopkg.in/mgutz/dat.v2/sqlx-runner"
 
 	"golang.org/x/crypto/ssh"
 )
@@ -102,9 +102,6 @@ func main() {
 	}
 
 	cleanup := func() {
-		if db != nil {
-			db.Close()
-		}
 		if tunnel != nil {
 			tunnel.Close()
 		}

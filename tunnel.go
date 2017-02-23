@@ -112,7 +112,10 @@ func SSHAgent() ssh.AuthMethod {
 // Close ends tunnel connection, by signaling gooroutine. This should always
 // be called to cleanup.
 func (st *SSHTunnel) Close() {
-	st.quit <- true
+	select {
+	case st.quit <- true:
+	default:
+	}
 }
 
 func iocopy(writer, reader net.Conn) {
